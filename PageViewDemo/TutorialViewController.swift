@@ -9,6 +9,7 @@
 import UIKit
 
 class TutorialViewController: UIViewController {
+    var pageIndex = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()
