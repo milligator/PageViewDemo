@@ -16,7 +16,7 @@ class MainPageViewController: UIPageViewController {
         println("pageVC is up")
         dataSource = dS
         
-        
+        setViewControllers([dS.viewControllerAtIndex(0)], direction: .Forward, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
