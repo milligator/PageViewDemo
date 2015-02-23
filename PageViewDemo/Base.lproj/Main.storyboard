@@ -24,7 +24,7 @@
         <!--Main Page View Controller-->
         <scene sceneID="neS-ne-Eg5">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hA8-pS-pRO" customClass="MainPageViewController" customModule="PageViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="hA8-pS-pRO" customClass="MainPageViewController" customModule="PageViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aTp-HT-eZy"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLI-Rt-hjq" userLabel="First Responder" sceneMemberID="firstResponder"/>

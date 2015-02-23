@@ -24,32 +24,32 @@ class MainPageViewControllerDataSource: NSObject, UIPageViewControllerDataSource
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as TutorialViewController).pageIndex
+        index--
         
         switch index {
-        case 0:
+        case Int.min...0:
             return nil
         case NSNotFound:
             fatalError("NSNotFound. Should crash. Are fucked")
         case pageText.count...Int.max:
             return nil
         default:
-            index--
             return viewControllerAtIndex(index)
         }
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var index = (viewController as TutorialViewController).pageIndex
+        index++
         
         switch index {
-        case 0:
+        case Int.min...0:
             return nil
         case NSNotFound:
             fatalError("NSNotFound. Should crash. Are fucked")
         case pageText.count...Int.max:
             return nil
         default:
-            index++
             return viewControllerAtIndex(index)
         }
     }

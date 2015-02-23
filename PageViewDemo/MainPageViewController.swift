@@ -16,7 +16,9 @@ class MainPageViewController: UIPageViewController {
         println("pageVC is up")
         dataSource = dS
         
-        setViewControllers([dS.viewControllerAtIndex(0)], direction: .Forward, animated: true, completion: nil)
+        setViewControllers([dS.viewControllerAtIndex(0) as TutorialViewController], direction: .Forward, animated: true, completion: nil)
+        
+        edgesForExtendedLayout = .None
     }
 
     override func didReceiveMemoryWarning() {

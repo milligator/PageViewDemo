@@ -15,9 +15,10 @@ class TutorialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println("did load at index \(pageIndex)")
-
         pageLabel.text = self.title
+        
+        println("did load at index \(pageIndex), title is \(pageLabel.text)")
+        
     }
 
     /*
