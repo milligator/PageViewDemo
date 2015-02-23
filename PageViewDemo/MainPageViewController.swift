@@ -18,7 +18,6 @@ class MainPageViewController: UIPageViewController {
         
         setViewControllers([dS.viewControllerAtIndex(0) as TutorialViewController], direction: .Forward, animated: true, completion: nil)
         
-        edgesForExtendedLayout = .None
     }
 
     override func didReceiveMemoryWarning() {

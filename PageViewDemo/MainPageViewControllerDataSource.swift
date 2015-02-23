@@ -27,7 +27,7 @@ class MainPageViewControllerDataSource: NSObject, UIPageViewControllerDataSource
         index--
         
         switch index {
-        case Int.min...0:
+        case Int.min...(-1):
             return nil
         case NSNotFound:
             fatalError("NSNotFound. Should crash. Are fucked")
@@ -43,7 +43,7 @@ class MainPageViewControllerDataSource: NSObject, UIPageViewControllerDataSource
         index++
         
         switch index {
-        case Int.min...0:
+        case Int.min...(-1):
             return nil
         case NSNotFound:
             fatalError("NSNotFound. Should crash. Are fucked")
