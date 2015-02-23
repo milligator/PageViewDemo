@@ -8,7 +8,7 @@
         <!--Navigation Controller-->
         <scene sceneID="i2G-vb-S7b">
             <objects>
-                <navigationController id="lSx-Bx-3qv" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="lSx-Bx-3qv" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cjd-YI-RsX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -49,7 +49,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWs-sk-Gxe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding_background" translatesAutoresizingMaskIntoConstraints="NO" id="FWs-sk-Gxe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
@@ -72,4 +72,7 @@
             <point key="canvasLocation" x="88" y="1260"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="onboarding_background" width="320" height="569"/>
+    </resources>
 </document>

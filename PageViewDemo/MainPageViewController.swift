@@ -13,7 +13,9 @@ class MainPageViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        println("pageVC is up")
         dataSource = dS
+        
         
     }
 
