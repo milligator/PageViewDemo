@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lSx-Bx-3qv">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -41,8 +42,30 @@
                     <view key="view" contentMode="scaleToFill" id="zXl-B3-UYX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcX-fh-xw7">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWs-sk-Gxe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="FWs-sk-Gxe" secondAttribute="trailing" constant="-16" id="PZo-gG-RSK"/>
+                            <constraint firstAttribute="centerY" secondItem="zcX-fh-xw7" secondAttribute="centerY" constant="0.5" id="ZKu-ab-h4o"/>
+                            <constraint firstItem="FWs-sk-Gxe" firstAttribute="leading" secondItem="zXl-B3-UYX" secondAttribute="leadingMargin" constant="-16" id="trg-xB-FL8"/>
+                            <constraint firstAttribute="centerX" secondItem="zcX-fh-xw7" secondAttribute="centerX" id="uyk-9e-dmK"/>
+                            <constraint firstItem="FWs-sk-Gxe" firstAttribute="top" secondItem="zXl-B3-UYX" secondAttribute="topMargin" id="wgH-6L-Ufe"/>
+                            <constraint firstItem="nmd-PO-beh" firstAttribute="top" secondItem="FWs-sk-Gxe" secondAttribute="bottom" id="whC-DP-JvJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="pageLabel" destination="zcX-fh-xw7" id="Orp-y3-rRt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uHQ-Ej-4Vj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

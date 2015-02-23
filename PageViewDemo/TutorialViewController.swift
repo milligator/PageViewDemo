@@ -11,10 +11,12 @@ import UIKit
 class TutorialViewController: UIViewController {
     var pageIndex = Int()
 
+    @IBOutlet weak var pageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        pageLabel.text = self.title
     }
 
     /*
