@@ -20,20 +20,20 @@
             </objects>
             <point key="canvasLocation" x="-476" y="584"/>
         </scene>
-        <!--Page View Controller-->
+        <!--Main Page View Controller-->
         <scene sceneID="neS-ne-Eg5">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hA8-pS-pRO" sceneMemberID="viewController">
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="hA8-pS-pRO" customClass="MainPageViewController" customModule="PageViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aTp-HT-eZy"/>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLI-Rt-hjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="274" y="592"/>
         </scene>
-        <!--View Controller-->
+        <!--Tutorial View Controller-->
         <scene sceneID="efi-tp-NfL">
             <objects>
-                <viewController id="wCs-LU-Bwc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="tutorialVC" id="wCs-LU-Bwc" customClass="TutorialViewController" customModule="PageViewDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wvr-dI-3Sz"/>
                         <viewControllerLayoutGuide type="bottom" id="nmd-PO-beh"/>

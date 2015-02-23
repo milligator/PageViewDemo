@@ -9,9 +9,11 @@
 import UIKit
 
 class MainPageViewController: UIPageViewController {
+    let dS = MainPageViewControllerDataSource()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        dataSource = dS
         
     }
 
